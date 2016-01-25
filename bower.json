@@ -1,7 +1,7 @@
 {
   "name": "at-theme",
   "private": true,
-  "version": "1.0.0.5",
+  "version": "1.0.0.8",
   "dependencies": {
     "polymer": "Polymer/polymer#0.8-preview",
     "paper-styles": "TangereJs/paper-styles#0.8-preview"
