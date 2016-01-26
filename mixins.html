@@ -22,5 +22,60 @@
       -ms-user-select: text;
       user-select: text;
     }
+
+    --at-default-font: {
+      font-family: 'Segoe UI', 'Segoe WP', 'Roboto', 'Frutiger', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    --at-error-background: {
+      background-color: #fff0f0;
+      }
+
+    --at-error-border: {
+        border-color: #dbb1b1;
+        border-radius: 0em 2px 2px 0em;
+      }
+
+    --at-error-shadow: {
+      box-shadow: 2px 0em 0em 0em #e41e2b inset;
+    }
+
+    --at-element: {
+      position: relative;
+      max-width: 100%;
+    }
+
+    --at-element-error-margins: {
+      margin: 0 0 2px 0;
+    }
+
+    --at-element-content-error: {
+      color: var(--at-error-color);
+      @apply(--at-error-background);
+      @apply(--at-error-border);
+      @apply(--at-error-shadow);
+    }
+
+    --at-element-disabled: {
+      opacity: 0.5;
+    }
+
+    --at-element-label: {
+      font-weight: bold;
+    }
+
+    --at-element-label-error: {
+      color: var(--at-error-color);
+    }
+
+    --at-element-content: {
+      width: 100%;
+      vertical-align: top;
+    }
+
+    --at-element-hint-error: {
+      color: var(--at-error-color);
+    }
   }
 </style>
