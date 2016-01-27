@@ -3,8 +3,92 @@
 
 <style is="custom-style">
   :root {
-    
+
     /* variables for at-core-form */
-    
+
+    --at-font: {
+      @apply(--paper-font-common-base);
+      @apply(--paper-font-common-nowrap);
+
+      font-size: 14px;
+    }
+
+    --at-form-host: {
+      cursor: auto;
+      margin: 0;
+      padding: 0;
+      min-width: 278px;
+      background: #f9f9f9;
+      line-height: 1.5;
+      color: #212121;
+    }
+
+    --at-form-input-common: {
+      @apply(--at-font);
+      margin: 0em;
+      outline: none;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      line-height: 1.2142em;
+      padding: 0.67861em 1em;
+      font-size: 1em;
+      background: #ffffff;
+      border: 1px solid rgba(39, 41, 43, 0.15);
+      color: #212121;
+      border-radius: 2px;
+      box-shadow: 0em 0em 0em 0em transparent inset;
+      -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    --at-form-input-focus: {
+      color: rgba(0, 0, 0, 0.85);
+      border-color: rgba(39, 41, 43, 0.3);
+      border-radius: 0em 2px 2px 0em;
+      background: #ffffff;
+      box-shadow: 1px 0em 0em 0em rgba(39, 41, 43, 0.3) inset;
+    }
+
+    --at-form-element: {
+      position: relative;
+      max-width: 100%;
+    }
+
+    --at-form-label: {
+      font-weight: bold;
+    }
+
+    --at-form-content: {
+      width: 100%;
+      vertical-align: top;
+    }
+
+    --at-form-disabled: {
+      opacity: 0.5;
+    }
+
+    --at-error-background: {
+      background-color: #fff0f0;
+      }
+
+    --at-error-border: {
+        border-color: #dbb1b1;
+        border-radius: 0em 2px 2px 0em;
+      }
+
+    --at-error-shadow: {
+      box-shadow: 2px 0em 0em 0em #e41e2b inset;
+    }
+
+    --at-form-error-margins: {
+      margin: 0 0 2px 0;
+    }
+
+    --at-form-content-error: {
+      color: var(--at-error-color);
+      @apply(--at-error-background);
+      @apply(--at-error-border);
+      @apply(--at-error-shadow);
+    }
   }
 </style>
