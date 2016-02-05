@@ -77,6 +77,14 @@
       padding: 10px 8px;
     }
 
+    --at-form-border-0: {
+      border: 0 solid rgba(39, 41, 43, 0.15);
+    }
+
+    --at-form-border-1: {
+      border: 1px solid rgba(39, 41, 43, 0.15);
+    }
+
     --at-form-input-common: {
       @apply(--at-form-input-font);
       margin: 0;
@@ -85,7 +93,7 @@
       -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
       @apply(--at-form-input-padding);
       background: #ffffff;
-      border: 1px solid rgba(39, 41, 43, 0.15);
+      @apply(--at-form-border-1);
       color: #212121;
       border-radius: 2px;
       box-shadow: 0 0 0 0 transparent inset;
@@ -158,11 +166,16 @@
     }
 
     --at-form-lookup-border-0: {
-      border: 0 solid rgba(39, 41, 43, 0.15);
+      @apply(--at-form-border-0);
     }
 
     --at-form-lookup-border-1: {
-      border: 1px solid rgba(39, 41, 43, 0.15);
+      @apply(--at-form-border-1);
     }
+
+    --at-form-date-active-background-color: #337ab7;
+    --at-form-date-active-color: #ffffff;
+    --at-form-date-disabled-color: #777777;
+    --at-form-date-hover-background-color: #eeeeee;
   }
 </style>
