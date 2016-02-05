@@ -177,5 +177,22 @@
     --at-form-date-active-color: #ffffff;
     --at-form-date-disabled-color: #777777;
     --at-form-date-hover-background-color: #eeeeee;
+
+    --at-form-button: {
+      width: 170px;
+      border: none;
+      color: rgba(0, 0, 0, 0.6) !important;
+      font-weight: bold;
+      line-height: 1;
+      @apply(--at-form-border-radius-0220);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      will-change: '';
+      -webkit-tap-highlight-color: transparent;
+    }
   }
 </style>
