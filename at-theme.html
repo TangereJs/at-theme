@@ -104,6 +104,17 @@
       .disabled {
         @apply(--at-form-disabled);
       }
+
+      /********************************************************************************/
+      /* at-form-* element shared styles */
+      /********************************************************************************/
+      .content-container.error {
+        @apply(--at-form-error-margins);
+      }
+
+      .content-container.error .at-content {
+        @apply(--at-form-content-error);
+      }
     </style>
   </template>
 </dom-module>
