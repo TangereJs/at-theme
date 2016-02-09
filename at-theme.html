@@ -11,7 +11,6 @@
 <link rel="import" href="mixins.html">
 <link rel="import" href="form.html">
 
-
 <style is="custom-style">
   :root {
 
@@ -40,3 +39,71 @@
     --at-primary-opacity: var(--dark-primary-opacity);
   }
 </style>
+
+<dom-module id="at-form-common">
+  <template>
+    <style>
+      /* placeholder styles do not work of not placed in a dom module like this and included into the target module with <style include=""> tag */
+      /* if you have issues with this approach discuss it with polymer js designers */
+
+      /********************************************************************************/
+      /* placeholder styles and placeholder error styles */
+      /********************************************************************************/
+
+      .has-placeholder::-webkit-input-placeholder {
+        @apply(--at-form-input-placeholder);
+      }
+
+      .has-placeholder:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        @apply(--at-form-input-placeholder);
+      }
+
+      .has-placeholder::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        @apply(--at-form-input-placeholder);
+      }
+
+      .has-placeholder:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        @apply(--at-form-input-placeholder);
+      }
+
+      .error .has-placeholder::-webkit-input-placeholder {
+        @apply(--at-form-input-placeholder-error);
+      }
+
+      .error .has-placeholder:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        @apply(--at-form-input-placeholder-error);
+        opacity: 1;
+      }
+
+      .error .has-placeholder::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        @apply(--at-form-input-placeholder-error);
+        opacity: 1;
+      }
+
+      .error .has-placeholder:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        @apply(--at-form-input-placeholder-error);
+      }
+
+      /********************************************************************************/
+      /* utility classes */
+      /********************************************************************************/
+      .hidden {
+        display: none;
+      }
+
+      .error {
+        color: var(--at-error-color);
+      }
+
+      .disabled {
+        @apply(--at-form-disabled);
+      }
+    </style>
+  </template>
+</dom-module>
