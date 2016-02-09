@@ -1,0 +1,92 @@
+<link rel="import" href="../polymer/polymer.html">
+
+
+<dom-module id="at-form-common">
+  <template>
+    <style>
+
+      /********************************************************************************/
+      /* placeholder styles and placeholder error styles */
+      /********************************************************************************/
+
+      .has-placeholder::-webkit-input-placeholder {
+        @apply(--at-form-input-placeholder);
+      }
+
+      .has-placeholder:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        @apply(--at-form-input-placeholder);
+      }
+
+      .has-placeholder::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        @apply(--at-form-input-placeholder);
+      }
+
+      .has-placeholder:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        @apply(--at-form-input-placeholder);
+      }
+
+      .error .has-placeholder::-webkit-input-placeholder {
+        @apply(--at-form-input-placeholder-error);
+      }
+
+      .error .has-placeholder:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        @apply(--at-form-input-placeholder-error);
+        opacity: 1;
+      }
+
+      .error .has-placeholder::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        @apply(--at-form-input-placeholder-error);
+        opacity: 1;
+      }
+
+      .error .has-placeholder:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        @apply(--at-form-input-placeholder-error);
+      }
+
+      /********************************************************************************/
+      /* utility classes */
+      /********************************************************************************/
+      
+      .hidden {
+        display: none;        
+      }
+
+      .error {
+        color: var(--at-error-color);
+      }
+
+      .disabled {
+        @apply(--at-form-disabled);
+      }      
+      
+
+      /********************************************************************************/
+      /* at-form-* element shared styles */
+      /********************************************************************************/
+      
+      .content-container.error {
+        @apply(--at-form-error-margins);
+      }
+
+      .content-container.error .at-content {
+        @apply(--at-form-content-error);
+      }
+      
+      
+      #label {
+        @apply(--at-form-label);
+      }
+
+      #hint {
+        @apply(--at-form-error-font);
+      }
+      
+    </style>
+  </template>
+</dom-module>
