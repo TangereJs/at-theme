@@ -52,9 +52,9 @@
       /********************************************************************************/
       /* utility classes */
       /********************************************************************************/
-      
+
       .hidden {
-        display: none;        
+        display: none;
       }
 
       .error {
@@ -63,22 +63,35 @@
 
       .disabled {
         @apply(--at-form-disabled);
-      }      
-      
+      }
+
+      .clear-float {
+        clear: both;
+      }
 
       /********************************************************************************/
       /* at-form-* element shared styles */
       /********************************************************************************/
-      
-      .content-container.error {
+      .at-container {
+        @apply(--at-form-element);
+      }
+
+      .at-content {
+        @apply(--at-form-input-common);
+      }
+
+      .at-content:focus {
+        @apply(--at-form-input-focus);
+      }
+
+      .at-content-container.error {
         @apply(--at-form-error-margins);
       }
 
-      .content-container.error .at-content {
+      .at-content-container.error .at-content {
         @apply(--at-form-content-error);
       }
-      
-      
+
       #label {
         @apply(--at-form-label);
       }
@@ -86,7 +99,34 @@
       #hint {
         @apply(--at-form-error-font);
       }
-      
+
+      /********************************************************************************/
+      /* classes for icon buttons on the right hand side of inputs; */
+      /* at-form-date/daterange use this */
+      /********************************************************************************/
+
+      .input-group {
+        display: table;
+        position: relative;
+        border-collapse: separate;
+      }
+
+      .input-group-addon {
+        display: table-cell;
+        width: 1%;
+        vertical-align: middle;
+        padding: 4px 12px;
+        color: #555;
+        background-color: var(--primary-background-color);
+        @apply(--at-form-border-1);
+        border-radius: 2px;
+        cursor: pointer;
+      }
+
+      .input-group-addon:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0
+      }
     </style>
   </template>
 </dom-module>
