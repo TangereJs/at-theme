@@ -156,8 +156,14 @@
       @apply(--at-error-shadow);
     }
 
-    --at-form-lookup-dropdown-item: {
-      background: rgba(255, 237, 40, 0.4);
+    /********************************************************************************/
+    /* shared mixin for "selected text" called --at-form-active-item                */
+    /********************************************************************************/
+
+    --at-form-active-item: {
+      background-color: var(--default-primary-color);
+      color: var(--at-form-date-active-color);
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     }
 
     --at-form-lookup-border-none: {
