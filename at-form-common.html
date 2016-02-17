@@ -130,6 +130,96 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 0
       }
+
+      /********************************************************************************/
+      /* column definitions for at-core-form layout and at-form-complex layout        */
+      /********************************************************************************/
+      [class*='col-'] {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        min-height: 84px;
+      }
+
+      [class*='col-'].col-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-8 {
+        width: 66.6666%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-5 {
+        width: 41.66%;
+      }
+
+      .col-4 {
+        width: 33.3333%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-2 {
+        width: 16.6667%;
+      }
+
+      .col-1 {
+        width: 8%;
+      }
+
+      .vertical .col-12 {
+        width: 100%;
+      }
+
+      .vertical .col-9 {
+        width: 100%;
+      }
+
+      .vertical .col-8 {
+        width: 100%;
+      }
+
+      .vertical .col-6 {
+        width: 100%;
+      }
+
+      .vertical .col-5 {
+        width: 41.66%;
+      }
+
+      .vertical .col-4 {
+        width: 100%;
+      }
+
+      .vertical .col-3 {
+        width: 50%;
+      }
+
+      .vertical .col-2 {
+        width: 16.6667%;
+      }
+
+      .vertical .col-1 {
+        width: 8%;
+      }
     </style>
   </template>
 </dom-module>
