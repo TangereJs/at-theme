@@ -112,23 +112,29 @@
         position: relative;
         border-collapse: separate;
       }
+      
+      .input-group > input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;    
+        border-right: 0;
+      }
 
       .input-group-addon {
         display: flex;
         flex-direction: row;
         flex: none;
         align-items: center;
-        padding: 4px 12px;
+        padding: 4px 8px;
         color: #555;
         background-color: var(--primary-background-color);
-        @apply(--at-form-border-1);
+        @apply(--at-form-border);
         border-radius: 2px;
         cursor: pointer;
       }
 
       .input-group-addon:last-child {
         border-top-left-radius: 0;
-        border-bottom-left-radius: 0
+        border-bottom-left-radius: 0;        
       }
 
       /********************************************************************************/
@@ -141,7 +147,7 @@
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box;
-        min-height: 84px;
+        min-height: 76px;
       }
 
       [class*='col-'].col-center {
