@@ -96,6 +96,10 @@
         @apply(--at-form-label);
       }
 
+      #label.hidden {
+        display: none;
+      }
+
       #hint {
         @apply(--at-form-error-font);
         line-height: 14px;
@@ -112,10 +116,10 @@
         position: relative;
         border-collapse: separate;
       }
-      
+
       .input-group > input {
         border-top-right-radius: 0;
-        border-bottom-right-radius: 0;    
+        border-bottom-right-radius: 0;
         border-right: 0;
       }
 
@@ -134,7 +138,7 @@
 
       .input-group-addon:last-child {
         border-top-left-radius: 0;
-        border-bottom-left-radius: 0;        
+        border-bottom-left-radius: 0;
       }
 
       /********************************************************************************/
