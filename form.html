@@ -149,24 +149,6 @@
       @apply(--at-error-shadow);
     }
 
-    /********************************************************************************/
-    /* shared mixin for "selected text" called --at-form-active-item                */
-    /********************************************************************************/
-
-    --at-form-active-item: {
-      background-color: var(--default-primary-color);
-      color: var(--at-form-date-active-color);
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    }
-
-    --at-form-date-active-color: #ffffff;
-
-    --at-form-highlighted-item: {
-      background-color: #cfd8dc;
-      color: var(--default-primary-color);
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    }
-
     --at-form-button: {
       border: none;
       color: rgba(0, 0, 0, 0.6) !important;
@@ -223,5 +205,19 @@
     --at-form-daterange-calendar-active-item-background-color: #357EBD;
     --at-form-daterange-calendar-active-item-border-color: #3071A9;
     --at-form-daterange-calendar-active-item-text-color: #FFFFFF;
+
+    --at-form-date-active-color: #FFFFFF;
+
+    /* we want dark text color and light background here */
+    --at-text-selected: {
+      color: #333333;
+      background: #cfd8dc;
+    }
+
+    /* we want light text color and dark background here */
+    --at-text-primary-selected: {
+      background-color: var(--default-primary-color);
+      color: #ffffff;
+    }
   }
 </style>
