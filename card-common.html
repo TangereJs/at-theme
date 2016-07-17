@@ -1,0 +1,87 @@
+<dom-module id="card-common">
+  <template>
+    <style>
+
+      .card {
+        cursor: pointer;
+      }
+
+      .header {
+        line-height: 24px;
+        @apply(--layout-horizontal);
+        @apply(--layout-center);
+        color: var(--primary-text-color);
+        padding: 8px 16px;
+      }
+
+      .title {
+        opacity: var(--at-secondary-opacity);
+        @apply(--paper-font-caption);
+        @apply(--layout-flex);
+      }
+
+      .headline {
+        color: var(--primary-text-color);
+        @apply(--paper-font-headline);
+        padding: 8px 16px;
+      }
+
+      .ago {
+        opacity: var(--at-secondary-opacity);
+        @apply(--paper-font-caption);
+      }
+
+      .avatar {
+        @apply(--layout-self-center);
+      }
+
+      .item {
+        @apply(--layout-horizontal);
+        color: var(--primary-text-color);
+        padding: 16px;
+      }
+
+      .footer {
+        @apply(--layout-horizontal);
+        padding: 8px 12px;
+      }
+
+      .actions {
+        border-top: 1px solid #e8e8e8;
+        @apply(--layout-horizontal);            
+        @apply(--layout-end-justified);
+        padding: 8px 12px;
+      }
+
+      .footer a {
+        @apply(--layout-self-center);
+      }
+
+      .content {
+        @apply(--layout-flex);
+        min-width:0;
+      }
+
+      .sep {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        opacity: var(--at-divider-opacity);
+      }
+
+      .actionicon {
+        @apply(--layout-self-center);
+        color: var(--at-action-color);
+        width: var(--at-inline-icon-size);
+        height: var(--at-inline-icon-size);
+        margin-right: 4px;
+      }
+
+      .active {
+        background-color: var(--at-active-background-color);
+        display: block;
+      }
+
+    </style>
+  </template>
+</dom-module>
