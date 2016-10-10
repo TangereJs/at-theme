@@ -8,16 +8,19 @@
     --at-form-label-font: {
       @apply(--paper-font-body1);
       @apply(--paper-font-common-nowrap);
+      font-size: 16px;
     }
 
     --at-form-input-font: {
       @apply(--paper-font-body1);
       @apply(--paper-font-common-nowrap);
+      font-size: 16px;
     }
 
     --at-form-error-font: {
       @apply(--paper-font-body1);
       @apply(--paper-font-common-nowrap);
+      font-size: 12px;
     }
 
     --at-form-host: {
@@ -69,15 +72,13 @@
     }
 
     --at-form-border: {
-      border: 1px solid rgba(39, 41, 43, 0.15);
-      box-shadow: 0 0 0 0 transparent inset;
-      border-radius: 2px;
+      border-width: 0 0 2px 0;
+      border-color: rgba(39, 41, 43, 0.15);
     }
 
    --at-form-border-focus: {
-      border-color: rgba(39, 41, 43, 0.3);
-      border-radius: 0 2px 2px 0;
-      box-shadow: 1px 0 0 0 rgba(39, 41, 43, 0.3) inset;
+      border-width: 0 0 2px 0;
+      border-color: var(--primary-text-color);
     }
 
     --at-form-input-common: {
@@ -90,16 +91,14 @@
       @apply(--at-form-input-padding);
       background: #ffffff;
       color: #212121;
-      -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-      transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.4s ease-out;
+      transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.4s ease-out;
       width: 100%;
       vertical-align: top;
     }
 
     --at-form-input-focus: {
       @apply(--at-form-border-focus);
-      color: rgba(0, 0, 0, 0.85);
-      background: #ffffff;
     }
 
     --at-form-input-placeholder: {
@@ -127,16 +126,12 @@
 
     --at-error-background: {
       background-color: #fff0f0;
-      }
+    }
 
     --at-error-border: {
         border-color: #dbb1b1;
-        border-radius: 0 2px 2px 0;
+        border-radius: 0 0 2px 0;
       }
-
-    --at-error-shadow: {
-      box-shadow: 2px 0 0 0 #e41e2b inset;
-    }
 
     --at-form-error-margins: {
       margin: 0 0 2px 0;
@@ -144,9 +139,7 @@
 
     --at-form-content-error: {
       color: var(--at-error-color);
-      @apply(--at-error-background);
       @apply(--at-error-border);
-      @apply(--at-error-shadow);
     }
 
     --at-form-button: {
