@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.0.0.47",
   "dependencies": {
-    "polymer": "Polymer/polymer#0.8-preview",
-    "paper-styles": "TangereJs/paper-styles#0.8-preview"
+    "tangere": "TangereJs/tangere#0.8-preview",
+    "paper-styles": "TangereJs/paper-styles#0.8-preview",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#master"
   }
 }
