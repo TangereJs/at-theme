@@ -1,10 +1,12 @@
 {
-  "name": "at-theme",
+  "name": "at-core-theme",
   "private": true,
-  "version": "1.0.0.62",
   "dependencies": {
     "tangere": "TangereJs/tangere#master",
-    "paper-styles": "TangereJs/paper-styles#master",
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#master"
-  }
+    "at-doc-viewer": "TangereJs/at-doc-viewer#master",
+    "paper-button": "PolymerElements/paper-button#master",
+    "paper-checkbox": "PolymerElements/paper-checkbox#master",
+    "paper-fab": "PolymerElements/paper-fab#master"
+  },
+  "version": "0.0.1.39"
 }
