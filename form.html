@@ -1,213 +1,215 @@
 <link rel="import" href="../tangere/tangere.html">
 
-<style is="custom-style">
-  :root {
+<custom-style>
+  <style is="custom-style">
+    :root {
 
-    /* variables for at-core-form */
+      /* variables for at-core-form */
 
-    --at-form-label-font: {
-      @apply(--paper-font-body1);
-      @apply(--paper-font-common-nowrap);
-      font-size: 12px;
-      line-height: 20px;
-    }
+      --at-form-label-font: {
+        @apply(--paper-font-body1);
+        @apply(--paper-font-common-nowrap);
+        font-size: 12px;
+        line-height: 20px;
+      }
 
-    --at-form-input-font: {
-      @apply(--paper-font-body1);
-      @apply(--paper-font-common-nowrap);
-      font-size: 16px;
-    }
+      --at-form-input-font: {
+        @apply(--paper-font-body1);
+        @apply(--paper-font-common-nowrap);
+        font-size: 16px;
+      }
 
-    --at-form-error-font: {
-      @apply(--paper-font-body1);
-      @apply(--paper-font-common-nowrap);
-      font-size: 12px;
-      line-height: 20px;
-    }
+      --at-form-error-font: {
+        @apply(--paper-font-body1);
+        @apply(--paper-font-common-nowrap);
+        font-size: 12px;
+        line-height: 20px;
+      }
 
-    --at-form-host: {
-      cursor: auto;
-      margin: 0;
-      padding: 0;
-      color: var(--primary-text-color);
-      display: block;
-    }
+      --at-form-host: {
+        cursor: auto;
+        margin: 0;
+        padding: 0;
+        color: var(--primary-text-color);
+        display: block;
+      }
 
-    --at-form-box-sizing: {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
+      --at-form-box-sizing: {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
 
-    --at-form-border-radius0000: {
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
-    }
-
-    --at-form-border-radius1111: {
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      border-radius: 1px;
-    }
-
-    --at-form-border-radius0220: {
-      -webkit-border-radius: 0 2px 2px 0;
-      -moz-border-radius: 0 2px 2px 0;
-      border-radius: 0 2px 2px 0;
-    }
-
-    --at-form-border-radius2222: {
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      border-radius: 2px;
-    }
-
-    --at-form-border-radius2200: {
-      -webkit-border-radius: 2px 2px 0 0;
-      -moz-border-radius: 2px 2px 0 0;
-      border-radius: 2px 2px 0 0;
-    }
-
-    --at-form-input-padding: {
-      padding: 6px 0 6px 0;
-    }
-
-    --at-form-border: {
-      border-width: 0 0 1px 0;
-      border-color: rgba(39, 41, 43, 0.15);
-      border-style: solid;
-      border-radius: 0;
-    }
-
-   --at-form-border-focus: {
-      border-width: 0 0 2px 0;
-      border-color: var(--primary-color);
-      padding-bottom: 5px;
-    }
-
-    --at-form-input-common: {
-      @apply(--at-form-input-font);
-      @apply(--at-form-border);
-      margin: 0;
-      outline: none;
-      -webkit-appearance: none;
-      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-      @apply(--at-form-input-padding);
-      background: #ffffff;
-      color: #212121;
-      -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.4s ease-out;
-      transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.4s ease-out;
-      width: 100%;
-      vertical-align: top;
-    }
-
-    --at-form-input-focus: {
-      @apply(--at-form-border-focus);
-    }
-
-    --at-form-input-placeholder: {
-      opacity: 0.8;
-    }
-
-    --at-form-input-placeholder-error: {
-      color: var(--at-error-color);
-    }
-
-    --at-form-element: {
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-    }
-
-    --at-form-label: {
-      @apply(--at-form-label-font);
-      font-weight: 500;
-    }
-
-    --at-form-disabled: {
-      opacity: 0.5;
-    }
-
-    --at-error-background: {
-      background-color: #fff0f0;
-    }
-
-    --at-error-border: {
-        border-color: #dbb1b1;
+      --at-form-border-radius0000: {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
         border-radius: 0;
       }
 
-    --at-form-error-margins: {
-      margin: 0;
+      --at-form-border-radius1111: {
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+      }
+
+      --at-form-border-radius0220: {
+        -webkit-border-radius: 0 2px 2px 0;
+        -moz-border-radius: 0 2px 2px 0;
+        border-radius: 0 2px 2px 0;
+      }
+
+      --at-form-border-radius2222: {
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+      }
+
+      --at-form-border-radius2200: {
+        -webkit-border-radius: 2px 2px 0 0;
+        -moz-border-radius: 2px 2px 0 0;
+        border-radius: 2px 2px 0 0;
+      }
+
+      --at-form-input-padding: {
+        padding: 6px 0 6px 0;
+      }
+
+      --at-form-border: {
+        border-width: 0 0 1px 0;
+        border-color: rgba(39, 41, 43, 0.15);
+        border-style: solid;
+        border-radius: 0;
+      }
+
+     --at-form-border-focus: {
+        border-width: 0 0 2px 0;
+        border-color: var(--primary-color);
+        padding-bottom: 5px;
+      }
+
+      --at-form-input-common: {
+        @apply(--at-form-input-font);
+        @apply(--at-form-border);
+        margin: 0;
+        outline: none;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        @apply(--at-form-input-padding);
+        background: #ffffff;
+        color: #212121;
+        -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.4s ease-out;
+        transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.4s ease-out;
+        width: 100%;
+        vertical-align: top;
+      }
+
+      --at-form-input-focus: {
+        @apply(--at-form-border-focus);
+      }
+
+      --at-form-input-placeholder: {
+        opacity: 0.8;
+      }
+
+      --at-form-input-placeholder-error: {
+        color: var(--at-error-color);
+      }
+
+      --at-form-element: {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      --at-form-label: {
+        @apply(--at-form-label-font);
+        font-weight: 500;
+      }
+
+      --at-form-disabled: {
+        opacity: 0.5;
+      }
+
+      --at-error-background: {
+        background-color: #fff0f0;
+      }
+
+      --at-error-border: {
+          border-color: #dbb1b1;
+          border-radius: 0;
+        }
+
+      --at-form-error-margins: {
+        margin: 0;
+      }
+
+      --at-form-content-error: {
+        color: var(--at-error-color);
+        @apply(--at-error-border);
+      }
+
+      --at-form-button: {
+        border: none;
+        color: rgba(0, 0, 0, 0.6) !important;
+        font-weight: bold;
+        line-height: 1;
+        @apply(--at-form-border-radius-0220);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+        transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+        will-change: '';
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      --at-picker-background: {
+        background-color: #FFFFFF;
+      }
+
+      --at-form-daterange-icon-text-color: #555555;
+      --at-form-daterange-icon-background-color: #EEEEEE;
+      --at-form-daterange-dropdown-background-color: #FFFFFF;
+
+      --at-form-daterange-dropdown-border-before: {
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ccc;
+        border-left: 7px solid transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+      }
+
+      --at-form-daterange-dropdown-border-after: {
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #fff;
+        border-left: 6px solid transparent;
+      }
+
+      --at-form-daterange-ranges-background-color: #FFFFFF;
+      --at-form-daterange-ranges-border: {
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+      }
+
+      --at-form-daterange-ranges-list-item-text-color: #0088CC;
+      --at-form-daterange-ranges-list-item-text-background-color: #F5F5F5;
+
+      --at-form-daterange-ranges-list-item-text-color-active: #FFFFFF;
+      --at-form-daterange-ranges-list-item-text-background-color-active: #0088CC;
+
+      --at-form-daterange-calendar-background-color: #FFFFFF;
+      --at-form-daterange-calendar-border: {
+        border: 1px solid #DDDDDD;
+      }
+
+      --at-form-daterange-calendar-disabled-item-color: #999999;
+      --at-form-daterange-calendar-item-hover-background-color: #EEEEEE;
+      --at-form-daterange-calendar-item-in-range-background-color: #EBF4F8;
+      --at-form-daterange-calendar-active-item-background-color: #357EBD;
+      --at-form-daterange-calendar-active-item-border-color: #3071A9;
+      --at-form-daterange-calendar-active-item-text-color: #FFFFFF;
+
+      --at-form-date-active-color: #FFFFFF;
     }
-
-    --at-form-content-error: {
-      color: var(--at-error-color);
-      @apply(--at-error-border);
-    }
-
-    --at-form-button: {
-      border: none;
-      color: rgba(0, 0, 0, 0.6) !important;
-      font-weight: bold;
-      line-height: 1;
-      @apply(--at-form-border-radius-0220);
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-      transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-      will-change: '';
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    --at-picker-background: {
-      background-color: #FFFFFF;
-    }
-
-    --at-form-daterange-icon-text-color: #555555;
-    --at-form-daterange-icon-background-color: #EEEEEE;
-    --at-form-daterange-dropdown-background-color: #FFFFFF;
-
-    --at-form-daterange-dropdown-border-before: {
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid #ccc;
-      border-left: 7px solid transparent;
-      border-bottom-color: rgba(0, 0, 0, 0.2);
-    }
-
-    --at-form-daterange-dropdown-border-after: {
-      border-right: 6px solid transparent;
-      border-bottom: 6px solid #fff;
-      border-left: 6px solid transparent;
-    }
-
-    --at-form-daterange-ranges-background-color: #FFFFFF;
-    --at-form-daterange-ranges-border: {
-      border-radius: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.15);
-    }
-
-    --at-form-daterange-ranges-list-item-text-color: #0088CC;
-    --at-form-daterange-ranges-list-item-text-background-color: #F5F5F5;
-
-    --at-form-daterange-ranges-list-item-text-color-active: #FFFFFF;
-    --at-form-daterange-ranges-list-item-text-background-color-active: #0088CC;
-
-    --at-form-daterange-calendar-background-color: #FFFFFF;
-    --at-form-daterange-calendar-border: {
-      border: 1px solid #DDDDDD;
-    }
-
-    --at-form-daterange-calendar-disabled-item-color: #999999;
-    --at-form-daterange-calendar-item-hover-background-color: #EEEEEE;
-    --at-form-daterange-calendar-item-in-range-background-color: #EBF4F8;
-    --at-form-daterange-calendar-active-item-background-color: #357EBD;
-    --at-form-daterange-calendar-active-item-border-color: #3071A9;
-    --at-form-daterange-calendar-active-item-text-color: #FFFFFF;
-
-    --at-form-date-active-color: #FFFFFF;
-  }
-</style>
+  </style>
+</custom-style>
