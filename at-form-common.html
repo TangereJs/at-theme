@@ -133,6 +133,10 @@
         padding-right: 15px;
         box-sizing: border-box;
         min-height: 76px;
+        /* flex with value of none is here to prevent 3rd party css libs from adding flex property to col-* rules */
+        flex: none;
+        /* max-width  with value of none is here to prevent 3rd party css libs from adding max-width property to col-* rules */
+        max-width: none;
       }
 
       [class*='col-'].col-center {
