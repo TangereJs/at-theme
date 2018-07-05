@@ -8,57 +8,62 @@
 
       .header {
         line-height: 24px;
-        @apply(--layout-horizontal);
-        @apply(--layout-center);
+        @apply --layout-horizontal;
+        @apply --layout-center;
         color: var(--primary-text-color);
         padding: 8px 16px;
       }
 
       .title {
         opacity: var(--at-secondary-opacity);
-        @apply(--paper-font-caption);
-        @apply(--layout-flex);
+        @apply --paper-font-caption;
+        @apply --layout-flex;
       }
 
       .headline {
         color: var(--primary-text-color);
-        @apply(--paper-font-headline);
+        @apply --paper-font-headline;
         padding: 8px 16px;
       }
 
       .ago {
         opacity: var(--at-secondary-opacity);
-        @apply(--paper-font-caption);
+        @apply --paper-font-caption;
       }
 
       .avatar {
-        @apply(--layout-self-center);
+        @apply --layout-self-center;
       }
 
       .item {
-        @apply(--layout-horizontal);
+        @apply --layout-horizontal;
         color: var(--primary-text-color);
         padding: 16px;
       }
 
+      .listItem {
+        @apply --layout-horizontal;
+        color: var(--primary-text-color);
+      }
+
       .footer {
-        @apply(--layout-horizontal);
+        @apply --layout-horizontal;
         padding: 8px 12px;
       }
 
       .actions {
         border-top: 1px solid #e8e8e8;
-        @apply(--layout-horizontal);
-        @apply(--layout-end-justified);
+        @apply --layout-horizontal;
+        @apply --layout-end-justified;
         padding: 8px 12px;
       }
 
       .footer a {
-        @apply(--layout-self-center);
+        @apply --layout-self-center;
       }
 
       .content {
-        @apply(--layout-flex);
+        @apply --layout-flex;
         min-width:0;
       }
 
@@ -70,7 +75,7 @@
       }
 
       .actionicon {
-        @apply(--layout-self-center);
+        @apply --layout-self-center;
         color: var(--at-action-color);
         width: var(--at-inline-icon-size);
         height: var(--at-inline-icon-size);
