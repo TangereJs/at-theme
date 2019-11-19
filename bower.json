@@ -1,7 +1,7 @@
 {
   "name": "at-theme",
   "private": true,
-  "version": "1.0.0.75",
+  "version": "1.0.0.77",
   "dependencies": {
     "tangere": "TangereJs/tangere#master",
     "paper-styles": "TangereJs/paper-styles#master",
