@@ -19,63 +19,63 @@
     :root {
 
       /* adenin Theme variables */
-      --at-error-color: var(--paper-deep-orange-a700);
-      --at-action-color: var(--paper-blue-800);
-      --at-action-color-hover: var(--paper-blue-500);
+      --at-error-color: var(--theme-error-color, var(--paper-deep-orange-a700));
+      --at-action-color: var(--theme-action-color, var(--paper-blue-800));
+      --at-action-color-hover: var(--theme-color-hover, var(--paper-blue-500));
       --at-inline-icon-size: 16px;
 
       /* :active */
-      --at-active-background-color: var(--paper-indigo-50);
+      --at-active-background-color: var(--theme-active-background-color, var(--paper-indigo-50));
 
       /* at-colors */
-      --at-primary: var(--primary-color);
-      --at-secondary: var(--paper-red-800);
-      --at-blue: var(--paper-blue-500);
-      --at-green: var(--paper-green-500);
-      --at-orange: var(--paper-orange-500);
-      --at-pink: var(--paper-pink-500);
-      --at-purple: var(--paper-purple-500);
-      --at-red: var(--paper-red-500);
-      --at-teal: var(--paper-teal-500);
-      --at-yellow: var(--paper-yellow-500);
-      --at-grey: var(--paper-grey-500);
-      --at-white: #ffffff;
-      --at-black: #000000;
-      --at-light-blue: var(--paper-blue-300);
-      --at-light-green: var(--paper-green-300);
-      --at-light-orange: var(--paper-orange-300);
-      --at-light-pink: var(--paper-pink-300);
-      --at-light-purple: var(--paper-purple-300);
-      --at-light-red: var(--paper-red-300);
-      --at-light-teal: var(--paper-teal-300);
-      --at-light-yellow: var(--paper-yellow-300);
-      --at-light-grey: var(--paper-grey-300);
+      --at-primary: var(--theme-primary, var(--primary-color));
+      --at-secondary: var(--theme-secondary, var(--paper-red-800));
+      --at-blue: var(--theme-blue, var(--paper-blue-500));
+      --at-green: var(--theme-green, var(--paper-green-500));
+      --at-orange: var(--theme-orange, var(--paper-orange-500));
+      --at-pink: var(--theme-pink, var(--paper-pink-500));
+      --at-purple: var(--theme-purple, var(--paper-purple-500));
+      --at-red: var(--theme-red, var(--paper-red-500));
+      --at-teal: var(--theme-teal, var(--paper-teal-500));
+      --at-yellow: var(--theme-yellow, var(--paper-yellow-500));
+      --at-grey: var(--theme-grey, var(--paper-grey-500));
+      --at-white: var(--theme-white, #ffffff);
+      --at-black:  var(--theme-black, #000000);
+      --at-light-blue: var(--theme-light-blue, var(--paper-blue-300));
+      --at-light-green: var(--theme-light-green, var(--paper-green-300));
+      --at-light-orange: var(--theme-light-orange, var(--paper-orange-300));
+      --at-light-pink: var(--theme-light-pink, var(--paper-pink-300));
+      --at-light-purple: var(--theme-light-purple, var(--paper-purple-300));
+      --at-light-red: var(--theme-light-red, var(--paper-red-300));
+      --at-light-teal: var(--theme-light-teal, var(--paper-teal-300));
+      --at-light-yellow: var(--theme-light-yellow, var(--paper-yellow-300));
+      --at-light-grey: var(--theme-light-grey, var(--paper-grey-300));
 
-      --at-background-text-color: var(--dark-theme-text-color);
+      --at-background-text-color: var(--theme-background-text-color, var(--dark-theme-text-color));
 
-      --at-success: var(--at-light-green);
-      --at-info: var(--at-light-blue);
-      --at-error: var(--at-light-red);
-      --at-warning: var(--at-light-orange);
-      --at-disabled: #9b9b9b;
-      --at-divider: #dbdbdb;
+      --at-success: var(--theme-success, var(--at-light-green));
+      --at-info: var(--theme-info, var(--at-light-blue));
+      --at-error: var(--theme-error, var(--at-light-red));
+      --at-warning: var(--theme-warning, var(--at-light-orange));
+      --at-disabled:  var(--theme-disabled, #9b9b9b);
+      --at-divider:  var(--theme-divider, #dbdbdb);
 
       /* default theme has light background */
-      --at-divider-opacity: var(--dark-divider-opacity);
-      --at-disabled-opacity: var(--dark-disabled-opacity); /* or hint text or icon */
-      --at-secondary-opacity: var(--dark-secondary-opacity);
-      --at-primary-opacity: var(--dark-primary-opacity);
+      --at-divider-opacity: var(--theme-divider-opacity, var(--dark-divider-opacity));
+      --at-disabled-opacity: var(--theme-disabled-opacity, var(--dark-disabled-opacity)); /* or hint text or icon */
+      --at-secondary-opacity: var(--theme-secondary-opacity, var(--dark-secondary-opacity));
+      --at-primary-opacity: var(--theme-primary-opacity, var(--dark-primary-opacity));
 
 
       /* text colors */
-      --at-text-primary: var(--primary-text-color);
-      --at-text-secondary: var(--secondary-text-color);
-      --at-text-light: var(--paper-grey-500);
+      --at-text-primary: var(--theme-text-primary, var(--primary-text-color));
+      --at-text-secondary: var(--theme-text-secondary, var(--secondary-text-color));
+      --at-text-light: var(--theme-text-light, var(--paper-grey-500));
 
 
       /* background color */
-      --at-list-hover-background-color: #dedfe2;
-      --at-selected-background-color: #eef2fa;
+      --at-list-hover-background-color:  var(--theme-list-hover-background-color, #dedfe2);
+      --at-selected-background-color:  var(--theme-selected-background-color, #eef2fa);
 
       /* override for paper */
       --paper-radio-group-item-padding: 8px;
